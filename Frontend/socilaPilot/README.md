@@ -27,3 +27,12 @@ Vite proxies `/projects`, `/export`, and `/health` to `http://localhost:8000`. T
 4. Review claim evidence, save edits, and export a case study as Markdown or PDF.
 
 The UI uses the endpoints documented by the FastAPI app in `Backend/api/main.py`.
+
+## Source layout
+
+- `src/App.tsx` coordinates the workspace state and connects pages to API actions.
+- `src/pages/` contains the Overview, Content Studio, Case Study, and Sources screens.
+- `src/components/` contains shared layout, import dialog, headings, and evidence UI.
+- `src/services/api.ts` contains backend requests and export/download helpers.
+- `src/types.ts` defines the shared API and UI types.
+- `src/App.css` and `src/index.css` contain the application and global styles.
